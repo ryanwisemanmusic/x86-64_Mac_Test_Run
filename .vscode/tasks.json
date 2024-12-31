@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Link",
+            "type": "shell",
+            "command": "make",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Build and link using the Makefile"
+        },
+        {
+            "label": "Run Program",
+            "type": "shell",
+            "command": "make run",
+            "args": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Run the program built by the Makefile"
+        },
+        {
+            "label": "Clean Build",
+            "type": "shell",
+            "command": "make clean",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [],
+            "detail": "Clean the build artifacts"
+        }
+    ]
+}
+
